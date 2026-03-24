@@ -11,7 +11,8 @@ namespace MohawkGame2D
     public class Game
     {
         // Place your variables here:
-
+        Vector2 position;
+        Player player;
 
         /// <summary>
         ///     Setup runs once before the game loop begins.
@@ -20,6 +21,8 @@ namespace MohawkGame2D
         {
             Window.SetTitle("Cool Game");
             Window.SetSize(400, 400);
+
+            position = Window.Size / 2;
         }
 
         /// <summary>
@@ -28,6 +31,9 @@ namespace MohawkGame2D
         public void Update()
         {
             Window.ClearBackground(Color.OffWhite);
+
+            Draw.FillColor = Color.Red;
+            Draw.Circle(position, 50);
         }
     }
 
