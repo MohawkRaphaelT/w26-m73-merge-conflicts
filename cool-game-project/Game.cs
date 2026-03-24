@@ -29,6 +29,11 @@ namespace MohawkGame2D
         {
             Window.ClearBackground(Color.OffWhite);
         }
+
+        public void DoEnemyThings()
+        {
+            // ....
+        }
     }
 
 }
